@@ -90,6 +90,13 @@ body {
   font-size: 1.25rem;
   outline: none;
   resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter-input:hover,
+.counter-input:focus {
+  border-color: var(--purple-400);
+  box-shadow: 0 0 12px 0 var(--purple-400);
 }
 
 .header-logo-2 {
@@ -129,8 +136,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transition: all 0.2s ease; */
 }
+
 
 .checkbox-input:checked {
   background-color: var(--purple-400);
