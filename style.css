@@ -46,10 +46,19 @@ body {
 }
 
 .header-toggle {
-  background: transparent;
+  background-color: var(--neutral-800);
   border: none;
   cursor: pointer;
-  padding: var(--space-100);
+  padding: var(--spacing-100);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.header-toggle:hover {
+  opacity: 0.8;
 }
 
 .title {
@@ -84,8 +93,7 @@ body {
 }
 
 .header-logo-2 {
-  border: none;
-  background-color: var(--neutral-800);
+  display: block;
 }
 
 .counter-controls {
