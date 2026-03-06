@@ -106,7 +106,7 @@ body {
 .checkbox-group {
   display: flex;
   gap: var(--spacing-300);
-  background-color:var(--neutral-900);
+  background-color: var(--neutral-900);
 }
 
 .checkbox {
@@ -148,47 +148,48 @@ body {
 }
 
 .stat-card {
-  flex: 1 ;
+  flex: 1;
   height: 150px;
   align-items: flex-start;
   padding: 16px 32px 48px 32px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   overflow: hidden;
   position: relative;
   gap: var(--spacing-200);
 }
 
-.stat-card-purple { 
-  background-color: var(--purple-400); 
+.stat-card-purple {
+  background-color: var(--purple-400);
   color: var(--neutral-900);
   background-image: url('./assets/images/pattern-character-count.svg');
   background-repeat: no-repeat;
   background-size: 150px;
-  background-position: 120%  80%;
+  background-position: 120% 80%;
 }
 
-.stat-card-yellow { 
-  background-color: var(--yellow-500); 
+.stat-card-yellow {
+  background-color: var(--yellow-500);
   color: var(--neutral-900);
   background-image: url('./assets/images/pattern-word-count.svg');
   background-repeat: no-repeat;
   background-size: 150px;
-  background-position: 120%  80%;
+  background-position: 120% 80%;
 }
 
-.stat-card-orange { 
-  background-color: var(--orange-500); 
+.stat-card-orange {
+  background-color: var(--orange-500);
   color: var(--neutral-900);
   background-image: url('./assets/images/pattern-sentence-count.svg');
   background-repeat: no-repeat;
   background-size: 150px;
-  background-position: 120%  80%;
+  background-position: 120% 80%;
 }
+
 .stat-number {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1;
   margin-top: var(--spacing-400);
@@ -199,7 +200,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   max-width: 60%;
-  margin-bottom:8px;
+  margin-bottom: 8px;
 }
 
 .letter-density {
@@ -212,21 +213,21 @@ body {
 }
 
 .density-row {
-  display: flex; 
-  align-items: center; 
-  gap: var(--spacing-200); 
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
   margin-bottom: var(--spacing-200);
 }
 
 .letter {
-  width: 20px; 
+  width: 20px;
 }
 
 .bar-container {
-  flex-grow: 1; 
+  flex-grow: 1;
   height: 12px;
   background-color: var(--neutral-800);
-  border-radius: 999px; 
+  border-radius: 999px;
 }
 
 .bar-fill {
@@ -238,7 +239,7 @@ body {
 .percentage {
   font-size: 0.875rem;
   color: var(--neutral-200);
-  width: 100px; 
+  width: 100px;
   text-align: right;
 }
 
@@ -268,7 +269,7 @@ body {
   .checkbox-group {
     gap: var(--spacing-200);
   }
-  
+
   .checkbox {
     font-size: 0.875rem;
   }
@@ -297,32 +298,77 @@ body {
     margin-bottom: 0;
   }
 
-   .stat-card.stat-card-purple {
+  .stat-card.stat-card-purple {
     background-position: 170% 60% !important;
-    background-size:130px
+    background-size: 130px
   }
 
-   .stat-card.stat-card-yellow {
+  .stat-card.stat-card-yellow {
     background-position: 170% 60% !important;
-    background-size:130px
+    background-size: 130px
   }
-   .stat-card.stat-card-orange {
+
+  .stat-card.stat-card-orange {
     background-position: 170% 60% !important;
-    background-size:130px
+    background-size: 130px
   }
 
   .stat-number {
-  font-size: 2.5rem; 
-  font-weight: 700;
-  line-height: 1;
-  margin-top: var(--spacing-400);
-  max-width: 50%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: var(--spacing-400);
+    max-width: 50%;
+  }
+
+  .stat-label {
+    font-size: 0.91rem;
+    font-weight: 400;
+    max-width: 60%;
+  }
 }
 
-.stat-label {
-  font-size: 0.91rem;
-  font-weight: 400;
-  max-width: 60%;
-  margin-bottom:8px;
-}
+@media (max-width: 500px) {
+  body {
+    padding: var(--spacing-200);
+  }
+
+  .container {
+    margin-top: var(--spacing-100);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .counter-input {
+    font-size: 1rem;
+    min-height: 150px;
+  }
+
+  .counter-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-200);
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+    gap: var(--spacing-100);
+  }
+
+  .checkbox {
+    font-size: 0.875rem;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: var(--spacing-200);
+  }
+
+  .stat-card.stat-card-purple,
+  .stat-card.stat-card-yellow,
+  .stat-card.stat-card-orange {
+    background-position: 127% 80% !important;
+  }
 }
