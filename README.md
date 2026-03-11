@@ -36,6 +36,3 @@ This project demonstrates core knowledge of several foundational web development
 3. Open `index.html` in your  web browser.
    - *No build tools, npm packages, or local servers required!*
 
-## Acknowledgements
-
-Built to showcase foundational DOM manipulation and responsive CSS design without relying on heavy frameworks. Ideal for visualizing strings and array algorithms in an interactive way.
