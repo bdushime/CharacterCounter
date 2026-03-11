@@ -28,6 +28,8 @@ This project demonstrates core knowledge of several foundational web development
 
 ## How to Run
 
+link: https://glittery-mousse-b50e28.netlify.app/
+
 1. Clone this repository to your local machine:
    ```bash
    git clone <your-repository-url>
@@ -35,4 +37,5 @@ This project demonstrates core knowledge of several foundational web development
 2. Open the project folder.
 3. Open `index.html` in your  web browser.
    - *No build tools, npm packages, or local servers required!*
+     
 
