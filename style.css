@@ -8,9 +8,12 @@
   --ff-main: "DM Sans", sans-serif;
 
   --neutral-0: #ffffff;
-  --neutral-900: #12131a;
-  --neutral-800: #21222c;
+  --neutral-100: #f2f2f7;
+  --neutral-200: #e4e4ef;
   --neutral-600: #404254;
+  --neutral-700: #2a2b37;
+  --neutral-800: #21222c;
+  --neutral-900: #12131a;
 
   --purple-400: #d3a0fa;
   --yellow-500: #ff9f00;
@@ -99,6 +102,24 @@ body {
   box-shadow: 0 0 12px 0 var(--purple-400);
 }
 
+.counter-input.limit-reached {
+  border-color: var(--orange-500);
+  box-shadow: 0 0 12px 0 var(--orange-500);
+}
+
+.limit-error-msg {
+  display: none;
+  align-items: center;
+  gap: var(--spacing-100);
+  color: var(--orange-500);
+  font-size: 0.875rem;
+  margin-top: var(--spacing-100);
+}
+
+.limit-error-msg.show {
+  display: flex;
+}
+
 .header-logo-2 {
   display: block;
 }
@@ -112,8 +133,26 @@ body {
 
 .checkbox-group {
   display: flex;
+  align-items: center;
   gap: var(--spacing-300);
   background-color: var(--neutral-900);
+}
+
+.char-limit-input {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid var(--neutral-600);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--neutral-0);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  display: none;
+}
+
+.char-limit-input.show {
+  display: inline-block;
 }
 
 .checkbox {
@@ -378,4 +417,44 @@ body {
   .stat-card.stat-card-orange {
     background-position: 127% 80% !important;
   }
+}
+
+body.light-theme {
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+}
+
+body.light-theme .header-toggle {
+  background-color: var(--neutral-0);
+}
+
+body.light-theme .counter-input {
+  background-color: var(--neutral-0);
+  border-color: var(--neutral-200);
+  color: var(--neutral-900);
+}
+
+body.light-theme .checkbox-group {
+  background-color: transparent;
+}
+
+body.light-theme .checkbox-input {
+  border-color: var(--neutral-600);
+}
+
+body.light-theme .char-limit-input {
+  border-color: var(--neutral-600);
+  color: var(--neutral-900);
+}
+
+body.light-theme .bar-container {
+  background-color: var(--neutral-200);
+}
+
+body.light-theme .percentage {
+  color: var(--neutral-600);
+}
+
+body.light-theme .see-more-btn {
+  color: var(--neutral-900);
 }

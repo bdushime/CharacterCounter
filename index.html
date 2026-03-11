@@ -20,12 +20,14 @@
           src="./assets/images/logo-dark-theme.svg"
           alt="Logo"
           class="header-logo-1"
+          id="main-logo"
         />
-        <button class="header-toggle">
+        <button class="header-toggle" id="theme-toggle-btn">
           <img
             src="./assets/images/icon-sun.svg"
             alt="Toggle Theme"
             class="header-logo-2"
+            id="theme-icon"
           />
         </button>
       </header>
@@ -36,45 +38,51 @@
 
       <div class="counter">
         <textarea
+          id="text-input"
           class="counter-input"
           placeholder="Start typing here..."
         ></textarea>
+        
+        <div class="limit-error-msg" id="limit-error-msg">
+          <img src="./assets/images/icon-info.svg" alt="" class="error-icon" />
+          <span id="limit-error-text">Limit reached! Your text exceeds 300 characters.</span>
+        </div>
 
         <div class="counter-controls">
           <div class="checkbox-group">
             <label class="checkbox">
-              <input type="checkbox" class="checkbox-input" /> Exclude Spaces
+              <input id="exclude-spaces-checkbox" type="checkbox" class="checkbox-input" /> Exclude Spaces
             </label>
             <label class="checkbox">
-              <input type="checkbox" class="checkbox-input" /> Set Character
-              Limit
+              <input id="char-limit-checkbox" type="checkbox" class="checkbox-input" /> Set Character Limit
             </label>
+            <input type="number" id="char-limit-input" class="char-limit-input" value="300" />
           </div>
 
-          <p class="reading-time">
-            Approx. reading time: <span id="time-val">1</span> minutes
+          <p class="reading-time" id="reading-time-display">
+            Approx. reading time: 0 minutes
           </p>
         </div>
       </div>
       <section class="stats-container">
         <article class="stat-card stat-card-purple">
-          <span class="stat-number">278</span>
-          <span class="stat-label">Total Characters</span>
+          <span id="char-count" class="stat-number">00</span>
+          <span class="stat-label" id="char-count-label">Total Characters</span>
         </article>
 
         <article class="stat-card stat-card-yellow">
-          <span class="stat-number">39</span>
+          <span id="word-count" class="stat-number">00</span>
           <span class="stat-label">Word Count</span>
         </article>
 
         <article class="stat-card stat-card-orange">
-          <span class="stat-number">04</span>
+          <span id="sentence-count" class="stat-number">00</span>
           <span class="stat-label">Sentence Count</span>
         </article>
       </section>
       <section class="letter-density">
         <h2 class="letter-density-title">Letter Density</h2>
-        <div class="density-list">
+        <div class="density-list" id="letter-density-container">
           <div class="density-row">
             <span class="letter">E</span>
             <div class="bar-container">
@@ -114,15 +122,17 @@
           </div>
         </div>
 
-        <button class="see-more-btn">
-          See more
+        <button class="see-more-btn" id="see-more-btn">
+          <span id="see-more-text">See more</span>
           <img
             src="./assets/images/icon-arrow-down.svg"
             alt=""
             class="arrow-icon"
+            id="see-more-icon"
           />
         </button>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
