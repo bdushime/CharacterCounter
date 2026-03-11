@@ -345,17 +345,17 @@ body {
   }
 
   .stat-card.stat-card-purple {
-    background-position: 170% 60% !important;
+    background-position: 170% 60%;
     background-size: 130px
   }
 
   .stat-card.stat-card-yellow {
-    background-position: 170% 60% !important;
+    background-position: 170% 60%;
     background-size: 130px
   }
 
   .stat-card.stat-card-orange {
-    background-position: 170% 60% !important;
+    background-position: 170% 60%;
     background-size: 130px
   }
 
@@ -400,6 +400,7 @@ body {
 
   .checkbox-group {
     flex-direction: column;
+    align-items: flex-start;
     gap: var(--spacing-100);
   }
 
