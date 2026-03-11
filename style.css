@@ -83,7 +83,7 @@ body {
 
 .counter-input {
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   background-color: var(--neutral-800);
   color: var(--neutral-0);
   padding: var(--spacing-200);
@@ -92,7 +92,7 @@ body {
   font-family: var(--ff-main);
   font-size: 1.25rem;
   outline: none;
-  resize: vertical;
+  resize: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
